@@ -15,11 +15,13 @@ INCLUDEPATH += \
     $$PWD/src
 
 SOURCES += \
-    src/encodingdetector.cpp
+    src/encodingdetector.cpp \
+    src/version.cpp
 
 HEADERS += \
     include/EncodingDetector/encodingdetector.h \
-    include/EncodingDetector/encodingdetector_global.h
+    include/EncodingDetector/encodingdetector_global.h \
+    include/EncodingDetector/version.h
 
 SDK_ROOT = $$(JOBQT_SDK)
 
