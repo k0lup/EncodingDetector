@@ -1,7 +1,7 @@
 QT += core
 
 TEMPLATE = lib
-CONFIG += shared c++17
+CONFIG += shared c++17 skip_target_version_ext
 
 TARGET = EncodingDetector
 VERSION = 1.0.0
@@ -34,8 +34,9 @@ ENCODINGDETECTOR_INSTALL_ROOT = $$SDK_ROOT/EncodingDetector/$$VERSION
 target.path = $$ENCODINGDETECTOR_INSTALL_ROOT/lib
 
 headers.files = \
-    $$PWD/include/EncodingDetector/EncodingDetector_global.h \
+    $$PWD/include/EncodingDetector/encodingDetector_global.h \
     $$PWD/include/EncodingDetector/encodingdetector.h
+    $$PWD/include/EncodingDetector/version.h
 
 headers.path = $$ENCODINGDETECTOR_INSTALL_ROOT/include/EncodingDetector
 
